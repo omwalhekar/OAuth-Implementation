@@ -7,6 +7,7 @@ const session = require("express-session");
 const passport = require("passport");
 const connectDB = require("./config/connectdb");
 const PORT = process.env.PORT || 5000;
+require("./models/user");
 require("./services/passport");
 
 connectDB();
